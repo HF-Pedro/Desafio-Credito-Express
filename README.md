@@ -54,6 +54,11 @@ npm install
 
 A partir o arquivo .env.example, crie um.env com as informações presentes
 
+```
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db"
+JWT_SECRET=""
+```
+
 ### Passo 5: Rodar o Servidor
 
 Agora, você pode rodar o servidor localmente:
