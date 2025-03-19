@@ -1,0 +1,14 @@
+CREATE TABLE "users" (
+    id SERIAL PRIMARY KEY,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE "user_sessions" (
+    id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES "users"(id) ON DELETE CASCADE,
+    token TEXT UNIQUE NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
