@@ -50,8 +50,11 @@ Com o banco de dados em funcionamento, instale as dependências do projeto:
 ```bash
 npm install
 ```
+### Passo 4: Criar o arquivo .env
 
-### Passo 4: Rodar o Servidor
+A partir o arquivo .env.example, crie um.env com as informações presentes
+
+### Passo 5: Rodar o Servidor
 
 Agora, você pode rodar o servidor localmente:
 
@@ -61,7 +64,7 @@ npm run dev
 
 O servidor estará disponível em `http://localhost:3000`.
 
-### Passo 5: Rodar os Testes
+### Passo 6: Rodar os Testes
 
 Para rodar os testes unitários, utilize o seguinte comando:
 
